@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The System</title>
+    <link rel="stylesheet" href="./44.css" />
+    <script src="./33.js" defer></script>
+  </head>
+  <body>
+    <h1 class="wh1">Welcome to the employee schedule</h1>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <center>
+      <div class="log_div" id="log_div">
+        <div class="imgcontainer">
+          <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input
+            id="user1"
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label><b>Password</b></label>
+          <input
+            id="password1"
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button id="butncon" class="butncon">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+      </div>
+    </center>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <div class="buttons" id="buttons">
+      <button class="log_butn" id="bun_inout">IN/OUT</button>
+      <button class="add_butn" id="add_butn">Add an employee</button>
+      <button class="entry_butn" id="entry_butn">Show employees</button>
+      <button class="Search" id="Search">Search employees</button>
+    </div>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <div id="Add_employee" class="Add_employee">
+      <div class="container_FROM">
+        <form action="#">
+          <div class="form-row">
+            <div class="input-data">
+              <input id="input1" type="number" required />
+              <div class="underline"></div>
+              <label> id</label>
+            </div>
+            <div class="input-data">
+              <input id="input2" type="text" required />
+              <div class="underline"></div>
+              <label> First Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input id="input3" type="text" required />
+              <div class="underline"></div>
+              <label> Last Name</label>
+            </div>
+            <div class="input-data">
+              <input id="input4" type="number" required />
+              <div class="underline"></div>
+              <label>worker number</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <input
+        id="butn1"
+        class="butn1"
+        type="button"
+        type="submit"
+        value="submit"
+      />
+      <!-- <button id="del_worekr" class="del_worekr">Show delete array</button> -->
+    </div>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <div id="Searchworker" class="Searchworker">
+      <h3>find employees</h3>
+      <label>name of employees/id</label>
+      <input id="nameofemp" type="number" class="nameofemp" />
+      <button id="find_w" class="find_w">Find</button>
+    </div>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+
+    <div id="spece" class="spece">
+      <div id="displaye" class="displaye"></div>
+      <div class="del" id="del">
+        <label>delete User:id</label>
+        <input class="input_delete" id="input_delete" type="number" />
+        <button id="deleteUser" class="deleteUser">delete</button>
+        <button id="showup">Show</button>
+      </div>
+    </div>
+
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <!-- IN/OUT -->
+    <div id="in_out" class="in_out">
+      <h3>find employees</h3>
+      <label>name of employees/id</label>
+      <input id="nameofemp2" type="number" class="nameofemp2" />
+      <button id="find_w2" class="find_w2">Find</button><br />
+      <!-- ______________________________________________________________ -->
+      <input placeholder="hours in" id="hours_in" type="number" />
+      <input placeholder="minut in" id="minute_in" type="number" />
+      <button id="ok">ok</button>
+      <input placeholder="hours out" id="hours_out" type="number" />
+      <input placeholder="minunte out" id="minute_out" type="number" />
+    </div>
+  </body>
+</html>
