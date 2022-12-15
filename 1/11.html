@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The System</title>
+    <link rel="stylesheet" href="./44.css" />
+    <script src="./33.js" defer></script>
+  </head>
+  <body>
+    <h1 class="wh1">Welcome to the employee schedule</h1>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <center>
+      <div class="log_div" id="log_div">
+        <div class="imgcontainer">
+          <img src="img_avatar2.png" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input
+            id="user1"
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label><b>Password</b></label>
+          <input
+            id="password1"
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button id="butncon" class="butncon">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+      </div>
+    </center>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <div class="buttons" id="buttons">
+      <button class="log_butn" id="bun_inout">IN/OUT</button>
+      <button class="add_butn" id="add_butn">Add an employee</button>
+      <button class="entry_butn" id="entry_butn">Show employees</button>
+      <button class="Search" id="Search">Search employees</button>
+    </div>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <div id="Add_employee" class="Add_employee">
+      <div class="container_FROM">
+        <form action="#">
+          <div class="form-row">
+            <div class="input-data">
+              <input id="input1" type="number" required />
+              <div class="underline"></div>
+              <label> id</label>
+            </div>
+            <div class="input-data">
+              <input id="input2" type="text" required />
+              <div class="underline"></div>
+              <label> First Name</label>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="input-data">
+              <input id="input3" type="text" required />
+              <div class="underline"></div>
+              <label> Last Name</label>
+            </div>
+            <div class="input-data">
+              <input id="input4" type="number" required />
+              <div class="underline"></div>
+              <label>worker number</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <input
+        id="butn1"
+        class="butn1"
+        type="button"
+        type="submit"
+        value="submit"
+      />
+      <!-- <button id="del_worekr" class="del_worekr">Show delete array</button> -->
+    </div>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <div id="Searchworker" class="Searchworker">
+      <h3>find employees</h3>
+      <label>name of employees/id</label>
+      <input id="nameofemp" type="number" class="nameofemp" />
+      <button id="find_w" class="find_w">Find</button>
+    </div>
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+
+    <div id="spece" class="spece">
+      <div id="displaye" class="displaye"></div>
+      <div class="del" id="del">
+        <label>delete User:id</label>
+        <input class="input_delete" id="input_delete" type="number" />
+        <button id="deleteUser" class="deleteUser">delete</button>
+        <button id="showup">Show</button>
+      </div>
+    </div>
+
+    <!-- _______________________________________________________________________________________________________________________________________________ -->
+    <!-- IN/OUT -->
+    <div id="in_out" class="in_out">
+      <h3>find employees</h3>
+      <label>name of employees/id</label>
+      <input id="nameofemp2" type="number" class="nameofemp2" />
+      <button id="find_w2" class="find_w2">Find</button><br />
+      <!-- ______________________________________________________________ -->
+      <button id="ok">ok</button>
+      <select id="hours_in">
+        <option value="6">06:00</option>
+        <option value="7">07:00</option>
+        <option value="8">08:00</option>
+        <option value="9">09:00</option>
+        <option value="10">10:00</option>
+        <option value="11">11:00</option>
+        <option value="12">12:00</option>
+        <option value="13">13:00</option>
+        <option value="14">14:00</option>
+        <option value="15">15:00</option>
+        <option value="16">16:00</option>
+        <option value="17">17:00</option>
+        <option value="18">18:00</option>
+        <option value="19">19:00</option>
+        <option value="20">20:00</option>
+        <option value="21">21:00</option>
+        <option value="22">22:00</option>
+        <option value="23">23:00</option>
+      </select>
+      <select id="minute_in">
+        <option value="0">00:00</option>
+        <option value="1">00:01</option>
+        <option value="2">00:02</option>
+        <option value="3">00:03</option>
+        <option value="4">00:04</option>
+        <option value="5">00:05</option>
+        <option value="6">00:06</option>
+        <option value="7">00:07</option>
+        <option value="8">00:08</option>
+        <option value="9">00:09</option>
+        <option value="10">00:10</option>
+        <option value="11">00:11</option>
+        <option value="12">00:12</option>
+        <option value="13">00:13</option>
+        <option value="14">00:14</option>
+        <option value="15">00:15</option>
+        <option value="16">00:16</option>
+        <option value="17">00:17</option>
+        <option value="18">00:18</option>
+        <option value="19">00:19</option>
+        <option value="20">00:20</option>
+        <option value="21">00:21</option>
+        <option value="22">00:22</option>
+        <option value="23">00:23</option>
+        <option value="24">00:24</option>
+        <option value="25">00:25</option>
+        <option value="26">00:26</option>
+        <option value="27">00:27</option>
+        <option value="28">00:28</option>
+        <option value="29">00:29</option>
+        <option value="30">00:30</option>
+        <option value="31">00:31</option>
+        <option value="32">00:32</option>
+        <option value="33">00:33</option>
+        <option value="34">00:34</option>
+        <option value="35">00:35</option>
+        <option value="36">00:36</option>
+        <option value="37">00:37</option>
+        <option value="38">00:38</option>
+        <option value="39">00:39</option>
+        <option value="40">00:40</option>
+        <option value="41">00:41</option>
+        <option value="42">00:42</option>
+        <option value="43">00:43</option>
+        <option value="44">00:44</option>
+        <option value="45">00:45</option>
+        <option value="46">00:46</option>
+        <option value="47">00:47</option>
+        <option value="48">00:48</option>
+        <option value="49">00:49</option>
+        <option value="50">00:50</option>
+        <option value="51">00:51</option>
+        <option value="52">00:52</option>
+        <option value="53">00:53</option>
+        <option value="54">00:54</option>
+        <option value="55">00:55</option>
+        <option value="56">00:56</option>
+        <option value="57">00:57</option>
+        <option value="58">00:58</option>
+        <option value="59">00:59</option>
+      </select>
+      <hr />
+      <select id="hours_out">
+        <option value="6">06:00</option>
+        <option value="7">07:00</option>
+        <option value="8">08:00</option>
+        <option value="9">09:00</option>
+        <option value="10">10:00</option>
+        <option value="11">11:00</option>
+        <option value="12">12:00</option>
+        <option value="13">13:00</option>
+        <option value="14">14:00</option>
+        <option value="15">15:00</option>
+        <option value="16">16:00</option>
+        <option value="17">17:00</option>
+        <option value="18">18:00</option>
+        <option value="19">19:00</option>
+        <option value="20">20:00</option>
+        <option value="21">21:00</option>
+        <option value="22">22:00</option>
+        <option value="23">23:00</option>
+      </select>
+      <select id="minute_out">
+        <option value="0">00:00</option>
+        <option value="1">00:01</option>
+        <option value="2">00:02</option>
+        <option value="3">00:03</option>
+        <option value="4">00:04</option>
+        <option value="5">00:05</option>
+        <option value="6">00:06</option>
+        <option value="7">00:07</option>
+        <option value="8">00:08</option>
+        <option value="9">00:09</option>
+        <option value="10">00:10</option>
+        <option value="11">00:11</option>
+        <option value="12">00:12</option>
+        <option value="13">00:13</option>
+        <option value="14">00:14</option>
+        <option value="15">00:15</option>
+        <option value="16">00:16</option>
+        <option value="17">00:17</option>
+        <option value="18">00:18</option>
+        <option value="19">00:19</option>
+        <option value="20">00:20</option>
+        <option value="21">00:21</option>
+        <option value="22">00:22</option>
+        <option value="23">00:23</option>
+        <option value="24">00:24</option>
+        <option value="25">00:25</option>
+        <option value="26">00:26</option>
+        <option value="27">00:27</option>
+        <option value="28">00:28</option>
+        <option value="29">00:29</option>
+        <option value="30">00:30</option>
+        <option value="31">00:31</option>
+        <option value="32">00:32</option>
+        <option value="33">00:33</option>
+        <option value="34">00:34</option>
+        <option value="35">00:35</option>
+        <option value="36">00:36</option>
+        <option value="37">00:37</option>
+        <option value="38">00:38</option>
+        <option value="39">00:39</option>
+        <option value="40">00:40</option>
+        <option value="41">00:41</option>
+        <option value="42">00:42</option>
+        <option value="43">00:43</option>
+        <option value="44">00:44</option>
+        <option value="45">00:45</option>
+        <option value="46">00:46</option>
+        <option value="47">00:47</option>
+        <option value="48">00:48</option>
+        <option value="49">00:49</option>
+        <option value="50">00:50</option>
+        <option value="51">00:51</option>
+        <option value="52">00:52</option>
+        <option value="53">00:53</option>
+        <option value="54">00:54</option>
+        <option value="55">00:55</option>
+        <option value="56">00:56</option>
+        <option value="57">00:57</option>
+        <option value="58">00:58</option>
+        <option value="59">00:59</option>
+      </select>
+    </div>
+  </body>
+</html>
